@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Counter from './Component/Count.js'
-import MyComponent from "./Component/MyComponent";
+import MyComponent from "./Component/MyComponent.js";
 
 const App = () => {
   return(
@@ -13,6 +12,5 @@ const App = () => {
 
 
 }
-
 
 export default App;
