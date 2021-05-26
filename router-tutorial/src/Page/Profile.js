@@ -26,3 +26,4 @@ const Profile = ({match}) =>{
         </div>
     );
 };
+export default Profile;
