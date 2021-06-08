@@ -1,6 +1,8 @@
 import React from 'react';
 import styled ,{css} from 'styled-components';
 import Responsive from "./responsive";
+import WritePage from '../pages/writePage';
+import {Route, Link} from "react-router-dom";
 
 const HeaderBlock = styled.div`
     positive :fixed;
@@ -10,6 +12,10 @@ const HeaderBlock = styled.div`
     `;
 
 const Wrapper = styled(Responsive)`
+    a{
+       text-decoration:none;
+       color: black;
+    }
     height:4rem;
     display:flex;
     align-items:center;
@@ -18,6 +24,7 @@ const Wrapper = styled(Responsive)`
        font-size:1.125rem;
        font-weight:800;
        letter-spacing:2px;
+    
     }
     .right{
         display:flex;
@@ -32,7 +39,12 @@ const Header = () =>{
         <>
           <HeaderBlock>
               <Wrapper>
-                  <div className="logo">REACTERS</div>
+                  <div className="logo" ><Link to="/">VLOG</Link></div>
+                  <div className="right">
+                      <Link to="/write">글쓰기</Link>
+                  </div>
+
+                  <Route path="/write" component={WritePage}/>
               </Wrapper>
           </HeaderBlock>
           <Spacer/>

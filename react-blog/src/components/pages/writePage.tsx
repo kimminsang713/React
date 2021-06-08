@@ -5,7 +5,6 @@ import Header from "../commons/header";
 
 const WritePage =()=>{
     return (
-
         <Responsive>
             <Header/>
             <Editor/>
