@@ -1,5 +1,5 @@
 import React from 'react';
-import styled ,{css} from 'styled-components';
+import styled  from 'styled-components';
 import Responsive from "./responsive";
 import WritePage from '../pages/writePage';
 import {Route, Link} from "react-router-dom";
@@ -44,9 +44,10 @@ const Header = () =>{
                       <Link to="/write">글쓰기</Link>
                   </div>
 
-                  <Route path="/write" component={WritePage}/>
               </Wrapper>
+
           </HeaderBlock>
+            <Route path="/write" component={WritePage}/>
           <Spacer/>
         </>
 

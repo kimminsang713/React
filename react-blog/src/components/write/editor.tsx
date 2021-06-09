@@ -14,7 +14,7 @@ const TitleInput = styled.input`
     outline : none;
     padding-bottom: 0.5rem;
     border:none;
-    border-bottom:1px solid whitegray;
+    border-bottom:1px solid black;
     margin-bottom : 2rem;
     width: 100%;
 `;
@@ -25,6 +25,7 @@ const QuillWrapper = styled.div`
        min-height:320px;
        font-size:1.125rem;
        line-height:1.5;
+       border-bottom:1px solid whitesmoke;
     }
     .ql-editor.ql-blank::before{
         left:0px;

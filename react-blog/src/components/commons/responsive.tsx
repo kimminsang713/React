@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 const ResponsiveBlock = styled.div`
     padding-left:1rem;
@@ -11,7 +11,7 @@ const ResponsiveBlock = styled.div`
        width:768px;
     }
     @media(max-width:768px){
-       width:100%;
+       width:93%;
     }
     `;
 
