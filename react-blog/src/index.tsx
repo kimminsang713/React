@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import PostListPage from './components/post/postListPage';
+
 import {BrowserRouter} from "react-router-dom";
 ReactDOM.render(
   <BrowserRouter>
-    <PostListPage />
+    <App />
   </BrowserRouter>,
   document.getElementById('root')
 );
